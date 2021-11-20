@@ -4,6 +4,10 @@ double* IterativeMethods::zeidelMethod(double** slae, double epsilon, int n, int
 {
     double* previousVariableValues = new double[n];
 
+    for (int i = 0; i < n; i++) {
+        previousVariableValues[i] = 1;
+    }
+
     count = 0;
 
     // Будем выполнять итерационный процесс до тех пор, 
